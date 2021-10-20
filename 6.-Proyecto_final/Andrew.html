@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprar</title>
+    <link rel="stylesheet" href="Css/Comprarandrew.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="Imagenes/Foto_inicio/favicon.png" type="image/x-icon">
+    <link rel="stylesheet"  href="http://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript">
+		function valideKey(evt){
+			
+			// code is the decimal ASCII representation of the pressed key.
+			var code = (evt.which) ? evt.which : evt.keyCode;
+			
+			if(code==8) { // backspace.
+			  return true;
+			} else if(code>=48 && code<=57) { // is a number.
+			  return true;
+			} else{ // other keys.
+			  return false;
+			}
+		}
+		</script>
+</head>
+<body>
+    <header> 
+        <nav class="barra">
+            <ul>
+                <li><a class="a1" href="Especiales.html" target="_blank">Especiales</a></li>
+                <li><a class="a2" href="Servicios.html" target="_blank">Servicios</a></li>
+                <li><a class="a3" href="Historia.html" target="_blank">Historia</a></li>
+                <li><a class="a4" href="Nosotros.html" target="_blank">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <section class="bloques">
+            <div class="bloque1">
+                <img src="Imagenes/Foto_inicio/Andrew.png" alt="">
+            </div>
+            <div class="bloque2">
+                <div class="contenido">
+                    <div class="titulo">
+                        <h1>JOSHUA</h1>
+                        <p>single | white</p>
+                    </div>
+                    <div class="descripcion">
+                        <div class="sabor">
+                            <h1>Sabor</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="aroma">
+                            <h1>Aroma</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                        <div class="especial">
+                            <h1>Especial</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="form">
+                        <div class="NYA">
+                            <input class="nombre" placeholder="Nombres" type="text">
+                            <input class="apellido" placeholder="Apellidos" type="text">
+                        </div>
+                        <div class="direccion">
+                            <input class="direccion" placeholder="Dirección" type="text">
+                        </div>
+                        <div class="datos">
+                            <input class="ciudad" placeholder="Ciudad" type="text">
+                            <input class="region" placeholder="Región" type="text">
+                            <input required class="postal" placeholder="Código Postal" type="text">
+                        </div>
+                        <div class="numero">
+                            <input class="celular" placeholder="Número Celular" type="text" onkeypress="return valideKey(event);">
+                        </div>
+                    </div>
+                    <div class="comprar">
+                        <div class="precio">
+                            <p>TOTAL <span>S/200.00</span></p>
+                        </div>
+                        <div class="boton">
+                            <button>COMPRAR</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <img class="horse" src="Imagenes/Foto_inicio/favicon.png" alt="">
+            <h3>STRONG BRAVE</h3>
+            <p> THE STRONG BRAVE DISTILLERY LYNCHBURG, TENNESSEE
+                STRONG BRAVE'S, OLD NO. 7, ANDREW, JOSHUA, RASEC, DAIMOND, NAIFAB, GENTLEMAN BRAVE, AND NO. 27 GOLD               
+                son marcas registradas de STRONG BRAVE Properties, Inc. ©2021. Todos los derechos reservados.                   
+                Todas las demás marcas registradas son propiedades de sus dueños respectivos.                    
+                Para conocer sobre el consumo responsable, visita Responsibility.org y OurThinkingAboutDrinking.com
+            </p>
+            <p>Copyright 2021&copy; Strong Brave.</p>
+        </div>
+        <div class="Iconos">
+            <ul>
+                <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                <li><a class="youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-botton">
+            <p><span>Por favor, no compartir con personas menores de edad o que no cumplan la edad necesaria por ley para beber alcohol.</span></p>
+        </div>
+    </footer>
+</body>
+</html>

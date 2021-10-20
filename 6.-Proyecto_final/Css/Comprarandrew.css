@@ -1,0 +1,358 @@
+*{
+    outline: none;
+}
+body{
+    margin: 0;
+}
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: white;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: rgb(130, 130, 130);
+    border-radius: 4rem;
+    border-right: 2px solid #ffffff;
+    border-left: 2px solid #fff;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(118, 118, 118);
+}
+header{
+    width: 100%;
+    height: 53px;
+}
+header .barra{
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+}
+.barra ul{
+    width: 100%;
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    z-index: 2;
+}
+.barra li{
+    font-size: 1.3rem;
+    font-family: 'Mate SC', serif;
+    margin: 0;
+    width: 120px;
+    transition: 0.4s;
+}
+.barra li a{
+    display: block;
+    padding: 15px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.barra li .a1{
+    border-right: 1px solid rgb(46, 46, 46);
+}
+.barra li .a2{
+    border-right: 1px solid rgb(46, 46, 46);
+}
+.barra li .a3{
+    border-right: 1px solid rgb(46, 46, 46);
+}
+.barra li:hover{
+    background-color: rgb(233, 233, 233);  
+    transform: scale(1.01);
+    box-shadow: 0 0 10px black;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.bloques{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.bloque1{
+    width: 50%;
+    height: 100vh;
+}
+.bloque1 img{
+    width: 100%;
+    height: 100vh;
+}
+/*bloque2*/
+.bloque2{
+    width: 50%;
+    height: 100vh;
+    background-color: #405A46;
+}
+.bloque2 .contenido{
+    margin: 0 10%;
+    height: 75%;
+    transform: translateY(10%);
+}
+.bloque2 .contenido .titulo{
+    color: white;
+}
+.bloque2 .contenido .titulo p{
+    color: white;
+    transform: translateY(-100%);
+}
+.bloque2 .contenido .descripcion{
+    display: flex;
+    text-align: center;
+}
+.bloque2 .contenido .descripcion p{
+    color: white;
+}
+.bloque2 .contenido .form{
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 80px 80px 80px;
+}
+.bloque2 .form input{
+    height: 50px;
+    width: 100%;
+    transition: .1s;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 12px;
+}
+.bloque2 input:hover{
+    text-shadow: 0 0 8px rgb(159, 159, 159);
+    box-shadow: 0 0 10px #212121;
+}
+.bloque2 input::placeholder{
+    color: rgb(145, 178, 184);
+}
+.bloque2 .contenido .form .NYA{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.bloque2 .NYA input{
+    margin: auto 0;
+}
+.bloque2 .NYA .nombre{
+    width: 92%;
+    
+}
+.bloque2 .NYA .apellido{
+    width: 92%;
+    justify-self: end;
+}
+.bloque2 .direccion{
+    width: 100%;
+    display: flex;
+}
+.bloque2 .datos{
+    display: flex;
+    justify-content: space-between;
+}
+.bloque2 .numero{
+    width: 100%;
+    display: flex;
+}
+.bloque2 .comprar{
+    height: 40px;
+    margin: 0 15%;
+    display: flex;
+    margin-top: 40px;
+    justify-content: space-between;
+}
+.bloque2 .comprar .precio{
+    width: 50%;
+    display: flex;
+}
+.bloque2 .comprar .boton{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.bloque2 .comprar p{
+    color: rgb(186, 186, 186);
+    margin: auto auto;
+}
+.bloque2 .comprar span{
+    color: white;
+}
+.bloque2 .comprar button{
+    padding: 12px 20px;
+    background-color: rgb(193, 237, 230);
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+.bloque2 .comprar button:hover{
+    background-color: rgb(165, 203, 197);
+    box-shadow: 0 0 10px rgb(118, 197, 199);
+}
+/*Footer*/
+footer{
+    position:relative;
+    background-color: #A97E4B;
+    box-shadow: 0 0px 30px rgba(51, 51, 48, 0.433);
+    background: linear-gradient(100deg,#c57b3b,#ddc590, #c29942);
+    height: auto;
+    width: 100%;
+    font-family: "Open Sans";
+    color: #fff;
+    padding-top: 3rem;
+}
+.horse{
+    max-width: 5.5rem;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: -0.3rem;
+}
+
+.footer-content h3{
+    color: rgb(0, 0, 0);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    color: #000;
+    max-width: 550px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    font-weight: 599;
+    font-family:'Mate SC', serif;
+}
+
+.Iconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Iconos ul{
+    padding-left: 0;
+}
+.Iconos ul li{
+    display: inline-block;
+    margin: 0 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.Iconos ul li a{
+    display: block;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 18px;
+    transition: .2s;
+}
+.Iconos ul:hover a{
+    filter: blur(2px);
+}
+.Iconos ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    filter: none;
+}
+.Iconos ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    
+}
+.Iconos a{
+    font-size: 2rem;
+    color: black;
+    margin: 0.5%;
+    justify-content: space-between;
+}
+.Iconos a .fab{
+    margin-top: .25rem;
+    color: black;
+    width: 100%;
+    padding: -.5rem 0;
+    font-size: 30px;
+}
+.Iconos a .fa-facebook-f:hover{
+    color: #00a6ff;
+    transition: 0.2s;
+}
+.Iconos a .fa-instagram:hover{
+    color: #ff3292;
+    transition: .1s;
+}
+.Iconos a .fa-twitter:hover{
+    color: #00eeff;
+    transition: .1s;
+}
+.Iconos a .fa-youtube:hover{
+    color: #ff2b2b;
+    transition: .1s;
+}
+.footer-botton span{
+    text-transform: uppercase;
+    opacity: .6;
+    color:rgb(0, 0, 0);
+}
+.footer-botton{
+    background-color: rgb(199, 175, 121);
+    width: 100%;
+    height: 100%;
+    padding: 5px 0;
+    text-align: center;
+}
+@media screen and (max-width: 768px){
+    .main{
+        height: 60%;
+    }
+    .bloques{
+        height: 60%;
+    }
+    .bloque1{
+        height: 60%;
+    }
+    .bloque1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .bloque2{
+        height: 10%;
+    }
+    .bloque2 .contenido{
+        height: 10%;
+    }
+    .bloque2 .contenido .titulo, .descripcion, .form, .comprar{
+        height: 50%;
+    }
+    .NYA{
+        flex-wrap: wrap;
+    }
+    .NYA .nombres{
+        padding-right: 57px;
+    }
+    .NYA .apellidos{
+        padding-right: 57px;
+    }
+    .datos{
+        flex-wrap: wrap;
+        
+    }
+    
+}
+
+@media screen and (max-width: 1028px){
+    
+} 
